@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <script>
+        function ubahGambar(img) {
+            img.style.opacity = "0.5";
+        }
+        function kembaliGambar(img) {
+            img.style.opacity = "1";
+        }
+    </script>
+</head>
+<body>
+    <h1>Event pada Gambar</h1>
+    <img src="gambar1.jpg" alt="Gambar 1" onmouseover="ubahGambar(this)" onmouseout="kembaliGambar(this)">
+    <img src="gambar2.jpg" alt="Gambar 2" onmouseover="ubahGambar(this)" onmouseout="kembaliGambar(this)">
+</body>
+</html>
